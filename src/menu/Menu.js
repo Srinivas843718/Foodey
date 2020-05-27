@@ -40,12 +40,12 @@ const Menu = () => {
             <div className="col"><Link to="/desserts"><h5 className="mt-3">Desserts</h5></Link></div>
             <div className="col"><Link to="/cart"><h5 className="mt-3">Cart</h5></Link></div>
         </div>
-        <Route exact path="/burgers" component={() =><Burgers burger={burger} handleUpdate={handleUpdate}/>}></Route>
-        <Route exact path="/pizza" component={() =><Pizza pizza={pizza} handleUpdate={handleUpdate}/>}></Route>
-        <Route exact path="/pasta" component={() =><Pasta pasta={pasta} handleUpdate={handleUpdate}/>}></Route>
-        <Route exact path="/biryani" component={() =><Biryani biryani={biryani} handleUpdate={handleUpdate}/>}></Route>
-        <Route exact path="/noodles" component={() =><Noodles noodles={noodles} handleUpdate={handleUpdate}/>}></Route>
-        <Route exact path="/desserts" component={() =><Desserts dessert={dessert} handleUpdate={handleUpdate}/>}></Route>
+        <Route exact path="/burgers" component={Burgers}></Route>
+        <Route exact path="/pizza" component={Pizza}></Route>
+        <Route exact path="/pasta" component={Pasta}></Route>
+        <Route exact path="/biryani" component={Biryani}></Route>
+        <Route exact path="/noodles" component={Noodles}></Route>
+        <Route exact path="/desserts" component={Desserts}></Route>
         <Route exact path="/cart" component={Cart}></Route>
         </Router>
         </div>
