@@ -3,13 +3,13 @@ import'./dishes.css'
 
 const Dishes = () => {
     const [dishes, setDishes] = useState([]);
-    const [isAPILoaded, setIsAPILoaded] = useState(false);
+   
     useEffect(() => {
         fetch('https://jsonblob.com/api/5036fbee-9cf6-11ea-9a4c-af39c62e8cfb').
             then(response => response.json()).
             then(json => {
                 setDishes([...json])
-                setIsAPILoaded(true)
+              
             })
     }, []);
     return (
